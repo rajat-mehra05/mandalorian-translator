@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Flavors&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+ :root {
+    --primary: #F2C94C;
+    --black: #333333;
+    --width-break:600px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+}
+
+nav {
+    background-color:transparent;
+}
+
+main {
+    margin: auto;
+    padding: 0.111rem;
+    max-width: var(--width-break);
+}
+
+
+textarea {
+  margin-top: 11rem;
+  width: 90%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: crimson;
+  font-family: "Poppins", sans-serif;
+  height: 20vh;
+}
+
+#bt-translate {
+    margin: 12px 10px;
+    padding: 12px 36px;
+    font-size: 18px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #c85101, #ff9f72);
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 6px 7px 40px -4px rgba(0,0, 0, 0.2);
+}
+
+#btn-reset {
+    margin: 12px 400px;
+    padding: 12px 36px;
+    font-size: 18px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #c85101, #ff9f72);
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 6px 7px 40px -4px rgba(0,0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+}
+
+#output {
+  margin-top: 1rem 1.8rem;
+  width: 90%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.901);
+  color: crimson;
+  font-family: "Poppins", sans-serif;
+  height: 20vh;;
+}
+
+footer {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    padding: 1rem;
+    background-color: wheat;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#bt-translate span {
+    position: absolute; 
+        border-radius: 50%;  
+        background-color: rgba(0, 0, 0, 0.6);   
+        width: 100px; 
+        height: 100px; 
+        margin-top: -50px; 
+        /* for positioning */
+        margin-left: -10px;   
+        animation: ripple 1s; 
+        opacity: 0;;
+}
+
+/* Add animation */
+    @keyframes ripple { 
+        from { 
+            opacity: 1; 
+            transform: scale(0); 
+        } 
+  
+        to { 
+            opacity: 0; 
+            transform: scale(10); 
+        } 
+    }
+
+    /* header  */
+
+ .text-box {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+}
+
+.header-primary{
+  text-transform: uppercase;
+  padding-left: 3px;
+  color: white;
+  transform: translate(-50%, -50%);
+  background: rgba(184, 3, 3, 0.9);
+}
+
+.header-primary-main{
+    font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 6px;
+  display: inline-block;
+  animation: moveTextRight 1s ease-in;
+}
+
+@keyframes moveTextRight {
+  from {
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+  
+  80% {
+    transform: translatex(10px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+@keyframes moveTextLeft {
+  from {
+    opacity: 0;
+    transform: translatex(100px);
+  }
+  
+  80% {
+    transform: translatex(-10px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
